@@ -1,0 +1,18 @@
+email:css:#pseudonym_session_unique_id
+passWord:css:#pseudonym_session_password
+logIn:xpath:(//div[@class="ic-Form-control ic-Form-control--login"])[3]
+admin:xpath:(//div[@class="menu-item-icon-container"])[2]
+macmilan:xpath:(//a[@class="czbXA_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"])[1]
+course:xpath://button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_ddES eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"]
+newCourse:xpath:(//input[@class="bwOAM_cwos bwOAM_ycrn bwOAM_EMjX"])[2]
+refrelCode:xpath:(//input[@class="bwOAM_cwos bwOAM_ycrn bwOAM_EMjX"])[3]
+macmilan2:xpath:(//select[@class="dLdjY_bDLZ"])[3]
+loadTest:xpath://option[@value="170482"]
+add:xpath:(//button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_bXiG eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"])[2]
+searchCourse:xpath://input[@class="bwOAM_cwos bwOAM_ycrn bwOAM_EMjX"]
+publish:xpath://button[@class="ui-button btn-publish"]
+chooseAction:xpath:(//span[@class="fNHEA_cSXm"])[1]
+chooseAndPublish:xpath://button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_bXiG eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"]
+people:xpath://a[@class="people"]
+peoples:xpath://a[@class="btn btn-primary pull-right icon-plus"]
+clickOnPeople:xpath://a[text()="People"]
