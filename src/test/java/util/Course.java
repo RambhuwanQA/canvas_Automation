@@ -3,10 +3,13 @@ package util;
 import java.util.Calendar;
 import java.util.Random;
 
+import net.bytebuddy.utility.RandomString;
+
 public class Course {
 	public static String randomString(int len) {
 		String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		Random random = new Random();
+		
 		StringBuffer sb = new StringBuffer(len);
 		for (int i = 0; i < len; i++)
         sb.append(str.toLowerCase().charAt(random.nextInt(str.length())));

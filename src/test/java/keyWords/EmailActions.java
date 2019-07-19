@@ -16,6 +16,7 @@ public class EmailActions {
 		
 		email.click();
 		email.sendKeys("canvasadmin");
+		System.out.println("Sent emailID");
 	 
 	}
 

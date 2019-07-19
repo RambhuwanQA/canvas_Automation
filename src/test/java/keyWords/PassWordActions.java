@@ -17,5 +17,5 @@ public void SendPassWord() {
 	WebElement login=ReadFilee.getElement(driver, "logIn", "locator.txt");
 	login.click();
 	System.out.println("login successfully");
-}
+   }
 }

@@ -7,7 +7,6 @@
         <methods>
           <include name="launch"/>
           <include name="publish"/>
-          <include name="people"/>
         </methods>
       </class> <!-- canvas.CanvasTest -->
     </classes>

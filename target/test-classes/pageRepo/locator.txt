@@ -16,3 +16,9 @@ chooseAndPublish:xpath://button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_bXiG eHiXd_y
 people:xpath://a[@class="people"]
 peoples:xpath://a[@class="btn btn-primary pull-right icon-plus"]
 clickOnPeople:xpath://a[text()="People"]
+addPeoples:xpath:(//button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_ddES eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"])[1]
+fullName:xpath://label//span[contains(text(),"Full Name")]/../../../span//span/input
+email_New:xpath://label//span[contains(text(),"Email")]/../../../span//span/input
+submit:xpath://button[@type="submit"]
+clickOnCourseAgain:xpath:(//li[@class="section"])[1]
+foundCourse:xpath:(//tbody[@data-automation='courses list']//td//a)[1]
