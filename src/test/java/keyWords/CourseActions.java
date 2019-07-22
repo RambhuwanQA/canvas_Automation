@@ -12,7 +12,7 @@ public class CourseActions {
 		this.driver=driver;
 	}
 	public void course() {
-		WebElement course =ReadFilee.getElement(driver, "course", "locator.txt");
+		WebElement course =ReadFilee.getElement(driver, "course", "course.txt");
 		course.click();
 		System.out.println("click on course");
 	}

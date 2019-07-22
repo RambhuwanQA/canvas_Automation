@@ -9,14 +9,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-
-
-public class ReadFilee {
-
+public class ReadFilee1 {
 	public static String getLocatorValue(WebDriver driver,String locatorName, String fileName) {
 		StringBuilder contents = new StringBuilder();
 		String file = "src/test/java/pageRepo";
-		File filePath = new File(file + File.separator + "course.txt");
+		File filePath = new File(file + File.separator + "user.txt");
 		//System.out.println(filePath);
 
 		try {
@@ -72,12 +69,8 @@ public class ReadFilee {
 			if (dataArray[i].split(":")[0].equalsIgnoreCase(locator)) {
 				locatorType=dataArray[i].split(":")[1];
 				locatorValue=dataArray[i].split(":")[2];
-				System.out.println(locatorValue.indexOf('$'));
-				System.out.println(locatorValue.indexOf('}'+1));
-				String str=locatorValue.substring(locatorValue.indexOf('$'), locatorValue.indexOf('}'+1));
-				System.out.println(str+"+==================");
-				locatorValue=dataArray[i].split(":")[2].replaceAll(str, replacement);
-				}
+				locatorValue =locatorValue .replaceAll("${cname}", replacement);
+			}
 		}
        
 		if(locatorType.equals("css")) {
@@ -94,8 +87,6 @@ public class ReadFilee {
 	    }
 		
 	}
-   public static void main(String[] args) {
-	
-}
+   
 	
 }

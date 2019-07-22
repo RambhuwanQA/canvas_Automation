@@ -11,10 +11,10 @@ public class PassWordActions {
 		this.driver=driver;
 	}
 public void SendPassWord() {
-	WebElement pass=ReadFilee.getElement(driver, "passWord", "locator.txt");
+	WebElement pass=ReadFilee.getElement(driver, "passWord", "course.txt");
 	pass.click();
 	pass.sendKeys("canvas");
-	WebElement login=ReadFilee.getElement(driver, "logIn", "locator.txt");
+	WebElement login=ReadFilee.getElement(driver, "logIn", "course.txt");
 	login.click();
 	System.out.println("login successfully");
    }

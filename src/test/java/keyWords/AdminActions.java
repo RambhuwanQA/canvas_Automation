@@ -1,5 +1,8 @@
 package keyWords;
 
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -12,9 +15,14 @@ public class AdminActions {
 		this.driver=driver;
 	}
 
-	public void admin() {
-		WebElement admin=ReadFilee.getElement(driver, "admin", "locator.txt");
+	public void admin() throws InterruptedException {
+		WebElement admin=ReadFilee.getElement(driver, "admin", "course.txt");
+		Thread.sleep(2000);
 		admin.click();
 		System.out.println("click on admin");
+		WebElement visibleAdmin=ReadFilee.getElement(driver,"visibleAdmin","course.txt");
+		String text=visibleAdmin.getText();
+		System.out.println(text);
+		assertEquals(text.trim(),"Admin");
 	}
 }

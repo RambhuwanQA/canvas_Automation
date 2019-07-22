@@ -12,7 +12,7 @@ public class EmailActions {
 		this.driver=driver;
 	}
 	public void SendEmail() {
-		WebElement email=ReadFilee.getElement(driver, "email", "locator.txt");
+		WebElement email=ReadFilee.getElement(driver, "email", "course.txt");
 		
 		email.click();
 		email.sendKeys("canvasadmin");

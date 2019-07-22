@@ -1,0 +1,11 @@
+ clickOnAdd_stu:xpath://textarea[@class="chpSa_blLZ chpSa_ycrn"]
+ clickOnNext:css:#addpeople_next
+ addUser:xpath://button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_bXiG eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"]
+ clickOn_Stu:xpath://a[@class="roster_user_name student_context_card_trigger"]
+ clickOnUSerMore:xpath://a[@class="more_user_information_link"]
+ addLogIn:xpath://a[@class="add_pseudonym_link"]
+ login:css:#pseudonym_unique_id
+ pass:css:#pseudonym_password
+ confirm:css:#pseudonym_password_confirmation
+ addLogin:xpath://button[text()="Add Login"]
+ message:xpath://span[@class="notification_message"]

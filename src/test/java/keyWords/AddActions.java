@@ -11,7 +11,7 @@ public class AddActions {
 		this.driver=driver;
 	}
 	public void addCourse() throws InterruptedException {
-		WebElement add=ReadFilee.getElement(driver, "add", "locator.txt");
+		WebElement add=ReadFilee.getElement(driver, "add", "course.txt");
 		add.click();
 		System.out.println("new course added");
 		//WebElement added=driver.findElement(By.xpath("//p[text()=\"newCourse18july successfully added!\"]"));

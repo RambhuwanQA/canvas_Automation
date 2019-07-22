@@ -14,11 +14,11 @@ public class NewCourseActions {
 	}
 public void newCourse()  {
 		
-		WebElement newCourse =ReadFilee.getElement(driver, "newCourse", "locator.txt");
+		WebElement newCourse =ReadFilee.getElement(driver, "newCourse", "course.txt");
 		newCourse.click();
-		System.out.println(str+"++++++++++===========");
+		//System.out.println(str+"++++++++++===========");
 		newCourse.sendKeys(str);
-		WebElement refre=ReadFilee.getElement(driver, "refrelCode", "locator.txt");
+		WebElement refre=ReadFilee.getElement(driver, "refrelCode", "course.txt");
 		refre.click();
 		System.out.println("click on refrel");
 		refre.sendKeys("1234");

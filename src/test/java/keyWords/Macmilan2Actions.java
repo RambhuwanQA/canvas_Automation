@@ -12,11 +12,11 @@ public class Macmilan2Actions {
 		this.driver=driver;
 	}
 	public void macmilan() {
-		WebElement mac2=ReadFilee.getElement(driver, "macmilan2", "locator.txt");
+		WebElement mac2=ReadFilee.getElement(driver, "macmilan2", "course.txt");
 		mac2.click();
 		System.out.println("click onm macmilan2");
 	
-	    WebElement loadTest=ReadFilee.getElement(driver, "loadTest", "locator.txt");
+	    WebElement loadTest=ReadFilee.getElement(driver, "loadTest", "course.txt");
 	    System.out.println("passes");
 		Actions action = new Actions(driver);
 		action.moveToElement(loadTest).perform();

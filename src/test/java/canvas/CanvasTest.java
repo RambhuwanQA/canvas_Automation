@@ -37,7 +37,7 @@ public class CanvasTest {
 		objectInit.passWordActions.SendPassWord();
 	}
 	@Test (priority = 3)
-	public void admin() {
+	public void admin() throws InterruptedException {
 		objectInit.adminActions.admin();
 	}
 	@Test (priority = 4)
@@ -67,18 +67,25 @@ public class CanvasTest {
 		objectInit.peopleActions1.clickOnPeople();
 	}
 	@Test(priority = 10)
+	public void add1() throws InterruptedException {
+		objectInit.student.clickOnPeople();
+	}
+	@Test(priority = 11)
 	public void searchCourse() throws InterruptedException   {
 		objectInit.searchActions.searchCourse();
 	}
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void publish() throws InterruptedException {
+		
 		objectInit.publishActions.publishCourse();
 	}
-	//@Test(priority = 12)
+	@Test(priority = 13)
 	public void people() throws InterruptedException {
 		objectInit.peopleActions2.clickOnPeople();
 	}
-  @AfterTest
+  
+	//@AfterTest
+  
 	public void quit() {
 	driver.quit(); 
 	System.out.println("driver end here"); 

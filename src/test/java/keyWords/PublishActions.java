@@ -1,9 +1,12 @@
 package keyWords;
 
+import static org.testng.Assert.assertEquals;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import util.ReadFilee;
+import util.ReadFilee1;
 
 public class PublishActions {
 	WebDriver driver;
@@ -23,7 +26,14 @@ public class PublishActions {
 		chooseAction.click();
 		
 		WebElement choosePublish=ReadFilee.getElement(driver, "chooseAndPublish", "locator.txt");
-	    choosePublish.click();
+	   Thread.sleep(2000);
+		choosePublish.click();
+	    
+	    WebElement message=ReadFilee1.getElement(driver, "message", "user.txt");;
+	    String str=message.getText();
+	    System.out.println(str);
+	    assertEquals(str.trim(), "You don't have any courses, so this page won't be very exciting for now. Once you've created or signed up for courses, you'll start to see conversations from all of your classes.");
+	    
 	}
 
 }
