@@ -10,6 +10,7 @@ public class CourseActions {
 	WebDriver driver;
 	public CourseActions(WebDriver driver) {
 		this.driver=driver;
+		
 	}
 	public void course() {
 		WebElement course =ReadFilee.getElement(driver, "course", "course.txt");

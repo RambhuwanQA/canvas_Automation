@@ -55,7 +55,7 @@ public class CanvasTest {
 		
 	}
 	@Test(priority = 7)
-	public void macmilan() {
+	public void macmilan() throws InterruptedException {
 		objectInit.mac2Actions.macmilan();
 	}
 	@Test(priority = 8)
@@ -81,9 +81,9 @@ public class CanvasTest {
 	}
 	@Test(priority = 13)
 	public void people() throws InterruptedException {
-		objectInit.peopleActions2.clickOnPeople();
+		objectInit.peopleActions2.clickOnPeople1();
 	}
-  
+ 
 	//@AfterTest
   
 	public void quit() {

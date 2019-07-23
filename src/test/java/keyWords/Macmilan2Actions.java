@@ -10,9 +10,11 @@ public class Macmilan2Actions {
 	WebDriver driver;
 	public Macmilan2Actions(WebDriver driver) {
 		this.driver=driver;
+		
 	}
-	public void macmilan() {
+	public void macmilan() throws InterruptedException {
 		WebElement mac2=ReadFilee.getElement(driver, "macmilan2", "course.txt");
+		Thread.sleep(2000);
 		mac2.click();
 		System.out.println("click onm macmilan2");
 	

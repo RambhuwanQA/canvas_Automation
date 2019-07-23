@@ -16,7 +16,7 @@ public class ReadFilee {
 	public static String getLocatorValue(WebDriver driver,String locatorName, String fileName) {
 		StringBuilder contents = new StringBuilder();
 		String file = "src/test/java/pageRepo";
-		File filePath = new File(file + File.separator + "course.txt");
+		File filePath = new File(file + File.separator + fileName);
 		//System.out.println(filePath);
 
 		try {
@@ -42,8 +42,8 @@ public class ReadFilee {
 		String locatorType="";
 		for (int i = 0; i < dataArray.length; i++) {
 			if (dataArray[i].split(":")[0].equalsIgnoreCase(locator)) {
-				locatorType=dataArray[i].split(":")[1];
-				locatorValue=dataArray[i].split(":")[2];
+				locatorType=dataArray[i].split(":")[1].trim();
+				locatorValue=dataArray[i].split(":")[2].trim();
 				//System.out.println(dataArray[i].split(":")[1]);
 				
 			}
@@ -72,11 +72,12 @@ public class ReadFilee {
 			if (dataArray[i].split(":")[0].equalsIgnoreCase(locator)) {
 				locatorType=dataArray[i].split(":")[1];
 				locatorValue=dataArray[i].split(":")[2];
-				System.out.println(locatorValue.indexOf('$'));
-				System.out.println(locatorValue.indexOf('}'+1));
-				String str=locatorValue.substring(locatorValue.indexOf('$'), locatorValue.indexOf('}'+1));
+				System.out.println(locatorValue.indexOf('$')+"  :index of $");
+				System.out.println(locatorValue.indexOf('}'));
+				String str=locatorValue.substring(locatorValue.indexOf('$'), locatorValue.indexOf('}')+1);
 				System.out.println(str+"+==================");
-				locatorValue=dataArray[i].split(":")[2].replaceAll(str, replacement);
+				locatorValue=locatorValue.replace(str, replacement).trim();
+				System.out.println(locatorValue+" :locatror value");
 				}
 		}
        

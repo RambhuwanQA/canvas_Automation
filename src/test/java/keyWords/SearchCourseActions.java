@@ -12,14 +12,15 @@ public class SearchCourseActions {
 	
 	public SearchCourseActions(WebDriver driver) {
 		this.driver=driver;
+		
 	}
 	public void searchCourse() throws InterruptedException    {
 		
-		WebElement clickOnCourseAgain=ReadFilee.getElement(driver,"clickOnCourseAgain", "user.txt");
+		WebElement clickOnCourseAgain=ReadFilee.getElement(driver,"clickOnCourseAgain", "course.txt");
 		Thread.sleep(5000);
 		clickOnCourseAgain.click();
 		
-		WebElement searchCourse=ReadFilee.getElement(driver, "searchCourse", "user.txt");
+		WebElement searchCourse=ReadFilee.getElement(driver, "searchCourse", "course.txt");
 		System.out.println("locator of search course");
 		Thread.sleep(7000);
 		Actions action = new Actions(driver);
@@ -28,10 +29,13 @@ public class SearchCourseActions {
 		
 	    System.out.println("click on search");
 		searchCourse.sendKeys(str1);
+		System.out.println(str1+" course :");
 		System.out.println("course found");
 		
-		Thread.sleep(3000);
+		
 		WebElement courseWithText=ReadFilee.getElement(driver, "courseWithText", "course.txt",str1);
+		Thread.sleep(3000);
+		
 		courseWithText.click();
 		}
 

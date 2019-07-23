@@ -1,11 +1,13 @@
- clickOnAdd_stu:xpath://textarea[@class="chpSa_blLZ chpSa_ycrn"]
- clickOnNext:css:#addpeople_next
- addUser:xpath://button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_bXiG eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"]
- clickOn_Stu:xpath://a[@class="roster_user_name student_context_card_trigger"]
- clickOnUSerMore:xpath://a[@class="more_user_information_link"]
- addLogIn:xpath://a[@class="add_pseudonym_link"]
- login:css:#pseudonym_unique_id
- pass:css:#pseudonym_password
- confirm:css:#pseudonym_password_confirmation
- addLogin:xpath://button[text()="Add Login"]
- message:xpath://span[@class="notification_message"]
+people_stu:xpath://a[text()="People"]
+peoples_stu:xpath://a[@class="btn btn-primary pull-right icon-plus"]
+clickOnAdd_stu:xpath://textarea[@class="chpSa_blLZ chpSa_ycrn"]
+clickOnNext_stu:css:#addpeople_next
+addUser_stu:xpath://button[@class="czbXA_bGBk eHiXd_bGBk eHiXd_bXiG eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS"]
+clickOn_Stu:xpath://a[@class="roster_user_name student_context_card_trigger"]
+clickOnUSerMore_stu:xpath://a[@class="more_user_information_link"]
+login:xpath://a[text()="Add Login"]
+login1_stu:css:#pseudonym_unique_id
+pass_stu:css:#pseudonym_password
+confirm_stu:css:#pseudonym_password_confirmation
+addLogin_stu:xpath://button[text()="Add Login"]
+message_stu:xpath://h2[@class="recent-activity-header"]

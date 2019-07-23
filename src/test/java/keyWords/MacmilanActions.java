@@ -11,13 +11,14 @@ public class MacmilanActions {
 	
      public MacmilanActions(WebDriver driver) {
 	 this.driver=driver;
+	 
      }
      public void mcmillan() throws InterruptedException  {
  		WebElement mcmilan=ReadFilee.getElement(driver, "macmilan", "course.txt");
- 		System.out.println("locator of macmilan");
+ 		
  		Actions action = new Actions(driver);
 		action.moveToElement(mcmilan).perform();
- 		Thread.sleep(4000);
+ 		//Thread.sleep(3000);
  		mcmilan.click();
  		System.out.println("click on macmilan");
  	}

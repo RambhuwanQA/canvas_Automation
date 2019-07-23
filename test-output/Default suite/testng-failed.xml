@@ -5,17 +5,7 @@
     <classes>
       <class name="canvas.CanvasTest">
         <methods>
-          <include name="searchCourse"/>
           <include name="launch"/>
-          <include name="add1"/>
-          <include name="course"/>
-          <include name="addPeople"/>
-          <include name="publish"/>
-          <include name="addCourse"/>
-          <include name="newCourse"/>
-          <include name="admin"/>
-          <include name="mcmillan"/>
-          <include name="macmilan"/>
           <include name="people"/>
         </methods>
       </class> <!-- canvas.CanvasTest -->

@@ -10,6 +10,7 @@ public class EmailActions {
 	
 	public EmailActions(WebDriver driver) {
 		this.driver=driver;
+		
 	}
 	public void SendEmail() {
 		WebElement email=ReadFilee.getElement(driver, "email", "course.txt");
